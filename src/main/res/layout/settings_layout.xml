@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CBCBBC"
+    tools:context="com.krikki.infiniteslideshow.SettingsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/saveButtonsLayout"
+        android:layout_alignParentBottom="true"
+        android:background="#494949">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/bSaveSet"
+            android:ems="10"
+            android:layout_margin="6dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save and Play"
+            android:id="@+id/bSaveNPlay"
+            android:ems="10"
+            android:layout_margin="6dp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/saveButtonsLayout"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Choose folder with images"
+                android:textSize="20dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/folderNameInput"
+                android:layout_margin="10dp"
+                android:padding="7dp"
+                android:background="#EDEDDE"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Check"
+                    android:id="@+id/bCheck"
+                    android:ems="6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Browse"
+                    android:id="@+id/bBrowse"
+                    android:ems="6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="35dp"
+                android:id="@+id/tvMode"
+                android:text="Set mode"
+                android:textSize="20dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:id="@+id/bMode"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:id="@+id/tvDelay"
+                android:text="Delay between images (in milliseconds)"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="7dp"
+                android:padding="7dp"
+                android:id="@+id/delayInput"
+                android:inputType="number"
+                android:width="150dp"
+                android:gravity="center"
+                android:background="#EDEDDE" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="35dp"
+                android:text="Set orientation"
+                android:textSize="20dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/bOrientation"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="35dp"
+                android:text="When back button is clicked"
+                android:textSize="20dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/bClickBack"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center"
+                android:gravity="center" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sample Size"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bSampleSizeInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="\?" />
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="20dp"
+                android:padding="7dp"
+                android:id="@+id/sampleSizeInput"
+                android:inputType="number"
+                android:width="150dp"
+                android:gravity="center"
+                android:background="#EDEDDE" />
+
+            <TextView
+                android:id="@+id/tvVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:text="Unknown version"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

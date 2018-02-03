@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/dialog_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="15dp"
+        android:textSize="21dp"
+        android:text="Choose your video"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#06067c"
+        android:layout_below="@id/dialog_title"
+        android:id="@+id/hr" />
+
+    <Button android:id="@+id/bOK"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:text="Select current directory"/>
+
+    <ListView android:id="@+id/list"
+        android:layout_below="@id/hr"
+        android:layout_above="@id/bOK"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"/>
+</RelativeLayout>
